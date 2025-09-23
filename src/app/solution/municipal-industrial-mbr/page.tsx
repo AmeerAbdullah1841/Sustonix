@@ -13,7 +13,7 @@ export default function MunicipalIndustrialMBRPage() {
         <div className="text-sm text-white/80 mb-6">
           <Link href="/" className="hover:underline">Home</Link>
           <span className="mx-2">›</span>
-          <Link href="/solution" className="hover:underline">Solution</Link>
+          <span className="opacity-80">Solution</span>
           <span className="mx-2">›</span>
           <span className="text-white">Municipal & industrial MBR</span>
         </div>

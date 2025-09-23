@@ -20,7 +20,7 @@ export default function VilepTechnologyPage() {
           <span className="mx-2">›</span>
           <Link href="/product-center" className="hover:underline">Product Center</Link>
           <span className="mx-2">›</span>
-          <Link href="/product-center/product-development" className="hover:underline">Product development</Link>
+          <span className="opacity-80">Product development</span>
           <span className="mx-2">›</span>
           <span className="text-white">ViLEP technology</span>
         </div>

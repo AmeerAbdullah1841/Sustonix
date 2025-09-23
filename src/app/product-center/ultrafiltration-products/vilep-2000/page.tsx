@@ -15,7 +15,7 @@ export default function Vilep2000Page() {
           <span className="mx-2">›</span>
           <Link href="/product-center" className="hover:underline">Product Center</Link>
           <span className="mx-2">›</span>
-          <Link href="/product-center/ultrafiltration-products" className="hover:underline">Ultrafiltration products</Link>
+          <span className="opacity-80">Ultrafiltration products</span>
           <span className="mx-2">›</span>
           <span className="text-white">ViLEP-2000</span>
         </div>

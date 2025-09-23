@@ -15,7 +15,7 @@ export default function ReverseOsmosisPage() {
           <span className="mx-2">›</span>
           <Link href="/product-center" className="hover:underline">Product Center</Link>
           <span className="mx-2">›</span>
-          <Link href="/product-center/reverse-osmosis-products" className="hover:underline">Reverse osmosis products</Link>
+          <span className="opacity-80">Reverse osmosis products</span>
           <span className="mx-2">›</span>
           <span className="text-white">Toyobo reverse osmosis membrane</span>
         </div>

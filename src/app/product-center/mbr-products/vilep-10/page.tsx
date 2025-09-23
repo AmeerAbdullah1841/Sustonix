@@ -16,7 +16,7 @@ export default function Vilep10Page() {
           <span className="mx-2">›</span>
           <Link href="/product-center" className="hover:underline">Product Center</Link>
           <span className="mx-2">›</span>
-          <Link href="/product-center/mbr-products" className="hover:underline">MBR products</Link>
+          <span className="opacity-80">MBR products</span>
           <span className="mx-2">›</span>
           <span className="text-white">ViLEP-100</span>
         </div>

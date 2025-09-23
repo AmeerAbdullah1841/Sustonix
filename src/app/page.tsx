@@ -237,7 +237,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <div className="relative w-full max-h-[420px] h-[420px]">
-              <Image src={products[activeProductIdx].image} alt={products[activeProductIdx].name} fill className="rounded-xl shadow-lg object-cover" />
+              <Image src={products[activeProductIdx].image} alt={products[activeProductIdx].name} fill unoptimized className="rounded-xl shadow-lg object-cover" />
             </div>
           </div>
         </div>
@@ -257,7 +257,7 @@ export default function Home() {
                     }`}
                     aria-label={`View ${p.name}`}
                   >
-                    <Image src={p.image} alt={p.name} fill className="object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
+                    <Image src={p.image} alt={p.name} fill unoptimized className="object-cover opacity-90 group-hover:opacity-100 transition-opacity" />
                     <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </button>
                   <div className="text-[10px] sm:text-xs text-white text-center leading-tight">{formatName(p.name)}</div>
@@ -290,7 +290,9 @@ export default function Home() {
               { name: "Steel and nonferrous metals", image: "https://omo-oss-image.thefastimg.com/portal-saas/new2024041015584165399/cms/image/f512574b-4223-43d7-9019-6d6ba4b35d30.png" ,href: "/application-cases/steel-nonferrous-metals"},
             ].map((f) => (
               <div key={f.name} className="group relative rounded-xl overflow-hidden shadow-md ring-1 ring-white/10 transition-transform duration-300 hover:shadow-xl hover:ring-white/40 transform hover:-translate-y-1">
-                <Image src={f.image} alt={f.name} fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+                <div className="relative h-40 sm:h-48 md:h-56 w-full">
+                  <Image src={f.image} alt={f.name} fill unoptimized className="object-cover transition-transform duration-500 group-hover:scale-110" />
+                </div>
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center transition-transform duration-300 group-hover:-translate-y-1">
                   <div className="text-lg sm:text-xl font-semibold">{f.name}</div>

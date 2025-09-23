@@ -15,7 +15,7 @@ export default function MicroporousAeratorPage() {
           <span className="mx-2">›</span>
           <Link href="/product-center" className="hover:underline">Product Center</Link>
           <span className="mx-2">›</span>
-          <Link href="/product-center/application-products" className="hover:underline">Application products</Link>
+          <span className="opacity-80">Application products</span>
           <span className="mx-2">›</span>
         <span className="text-white">Free Aeration low resistance microporous aerator</span>
         </div>

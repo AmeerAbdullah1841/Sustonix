@@ -200,10 +200,16 @@ export default function Navbar() {
                 <div className="mt-2 text-sm leading-6 text-gray-700">
                   {currentItem?.description || ""}
                 </div>
-                {(activeSubChild?.href || activeChild?.href) && (
+                {(activeSubChild?.href || activeChild?.href || currentItem?.label === "Product Center" || currentItem?.label === "Application Cases") && (
                   <div className="mt-3">
                     <Link
-                      href={activeSubChild?.href || activeChild?.href || ""}
+                      href={
+                        currentItem?.label === "Product Center"
+                          ? "/product-center"
+                          : currentItem?.label === "Application Cases"
+                          ? "/application-cases"
+                          : activeSubChild?.href || activeChild?.href || ""
+                      }
                       className="inline-flex items-center rounded-full bg-black text-white px-3 py-1.5 text-xs font-medium hover:bg-blue-700"
                     >
                       Open page
