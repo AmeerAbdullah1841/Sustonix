@@ -104,6 +104,9 @@ export default function ProductCenterPage() {
               key={category.id}
               className="group relative flex flex-col items-center text-center transition-all duration-300 transform hover:-translate-y-2"
               onMouseEnter={() => setHoveredCategory(category.id)}
+              onMouseLeave={() => setHoveredCategory(null)}
+              onTouchStart={() => setHoveredCategory(category.id)}
+              onClick={() => setHoveredCategory(category.id)}
             >
               <div className="flex flex-col items-center">
                 {/* Icon */}
@@ -128,10 +131,10 @@ export default function ProductCenterPage() {
                 )}
               </div>
 
-              {/* Sub-products Tooltip */}
+              {/* Sub-products list: static on mobile, floating on desktop */}
               {hoveredCategory === category.id && category.subProducts && (
-                <div className="absolute top-full mt-4 z-50">
-                  <div className="flex flex-wrap gap-3 justify-center">
+                <div className="w-full mt-3 md:absolute md:top-full md:mt-4 md:z-50">
+                  <div className="flex flex-wrap gap-3 justify-center md:justify-center bg-black/30 md:bg-transparent rounded-xl p-2 md:p-0">
                     {category.subProducts.map((subProduct, index) => (
                       <div
                         key={index}

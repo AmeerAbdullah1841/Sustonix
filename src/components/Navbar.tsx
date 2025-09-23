@@ -28,30 +28,30 @@ const navItems: NavItem[] = [
     children: [
       { 
         label: "Product development", 
-        href: "/product-center/product-development",
+        href: "",
         children: [
           { label: "1) Sumitomo Electric POREFLON film", href: "/product-center/sumitomo-electric-poreflon-film"  },
           { label: "2) VILEP technology", href: "/product-center/product-development/vilep-technology" },
         ]
       },
-      { label: "MBR products", href: "/product-center/mbr-products",
+      { label: "MBR products", href: "",
         children: [
             { label: "1) ViLEP-100", href: "/product-center/mbr-products/vilep-10" },
             { label: "2) VILEP-1000", href: "/product-center/mbr-products/vilep-1000" },
           ]
        },
-      { label: "Ultrafiltration products", href: "/product-center/ultrafiltration-products",
+      { label: "Ultrafiltration products", href: "",
         children: [
           { label: "1) ViLEP-1500", href: "/product-center/ultrafiltration-products/vilep-1500" },
           { label: "2) ViLEP-2000", href: "/product-center/ultrafiltration-products/vilep-2000" },
         ]
        },
-      { label: "Reverse osmosis products", href: "/product-center/reverse-osmosis-products",
+      { label: "Reverse osmosis products", href: "",
         children: [
           { label: "Toyobo reverse osmosis membrane", href: "/product-center/reverse-osmosis-products/toyobo-reverse-osmosis-membrane" },
         ]
       },
-      { label: "Application products", href: "/product-center/application-products" ,
+      { label: "Application products", href: "" ,
         children: [
           { label: "Free Aeration low resistance microporous aerator", href: "/product-center/application-products/free-aeration-low-resistance-microporous-aerator" },
         ]
@@ -157,7 +157,7 @@ export default function Navbar() {
                     <div className="relative group">
                       <Link
                         href={item.href || "/"}
-                        className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 rounded-md"
+                        className="inline-flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200 rounded-md"
                         onMouseEnter={() => {
                           setOpenDropdown(item.label);
                           setActiveChild(item.children?.[0] || null);
@@ -220,23 +220,41 @@ export default function Navbar() {
               <div className="w-64 p-10 flex flex-col justify-start">
                 {(currentItem?.children || []).map((child) => (
                   <div key={child.label} className="relative">
-                    <Link
-                      href={child.href}
-                      className={`w-full block rounded-md px-3 py-2 text-sm text-black hover:text-blue-600 hover:bg-transparent ${
-                        activeChild?.label === child.label ? "bg-gray-50" : ""
-                      }`}
-                      onMouseEnter={() => {
-                        setActiveChild(child);
-                        setActiveSubChild(null);
-                      }}
-                      onFocus={() => {
-                        setActiveChild(child);
-                        setActiveSubChild(null);
-                      }}
-                      onClick={() => setOpenDropdown(null)}
-                    >
-                      {child.label}
-                    </Link>
+                    {child.href ? (
+                      <Link
+                        href={child.href}
+                        className={`w-full block rounded-md px-3 py-2 text-sm text-black hover:text-blue-600 hover:bg-transparent ${
+                          activeChild?.label === child.label ? "bg-gray-50" : ""
+                        }`}
+                        onMouseEnter={() => {
+                          setActiveChild(child);
+                          setActiveSubChild(null);
+                        }}
+                        onFocus={() => {
+                          setActiveChild(child);
+                          setActiveSubChild(null);
+                        }}
+                        onClick={() => setOpenDropdown(null)}
+                      >
+                        {child.label}
+                      </Link>
+                    ) : (
+                      <div
+                        className={`w-full block rounded-md px-3 py-2 text-sm text-gray-600 cursor-default ${
+                          activeChild?.label === child.label ? "bg-gray-50" : ""
+                        }`}
+                        onMouseEnter={() => {
+                          setActiveChild(child);
+                          setActiveSubChild(null);
+                        }}
+                        onFocus={() => {
+                          setActiveChild(child);
+                          setActiveSubChild(null);
+                        }}
+                      >
+                        {child.label}
+                      </div>
+                    )}
                      {/* Nested children */}
                      {activeChild?.label === child.label && child.children && child.children.length > 0 && (
                        <div className="ml-4 mt-1 space-y-1">
@@ -289,13 +307,33 @@ export default function Navbar() {
                     <div className="pl-2">
                       {item.children.map((child) => (
                         <div key={child.label} className="">
-                          <Link
-                            href={child.href}
-                            className="block rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            onClick={() => setMobileOpen(false)}
-                          >
-                            {child.label}
-                          </Link>
+                          {child.href ? (
+                            <Link
+                              href={child.href}
+                              className="block rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              {child.label}
+                            </Link>
+                          ) : (
+                            <div className="block rounded-md px-3 py-2 text-sm text-gray-800 font-medium">
+                              {child.label}
+                            </div>
+                          )}
+                          {child.children && child.children.length > 0 && (
+                            <div className="ml-3 border-l border-gray-200 pl-3">
+                              {child.children.map((sub) => (
+                                <Link
+                                  key={sub.label}
+                                  href={sub.href}
+                                  className="block rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                  onClick={() => setMobileOpen(false)}
+                                >
+                                  {sub.label}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       ))}
                     </div>
