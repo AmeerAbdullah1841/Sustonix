@@ -138,7 +138,7 @@ export default function ProductCenterPage() {
                         className="group/sub"
                       >
                         {/* Circular Image Bubble */}
-                        <Link href={(subProduct as any).href || '#'} className="block">
+                        <Link href={subProduct.href || '#'} className="block">
                           <div className="w-24 h-24 rounded-full overflow-hidden bg-white/90 backdrop-blur-sm shadow-lg ring-1 ring-white/50 group-hover/sub:ring-2 group-hover/sub:ring-blue-400 transition-all duration-300 group-hover/sub:scale-110">
                           {subProduct.image ? (
                             <Image

@@ -330,7 +330,7 @@ export default function Home() {
                 { date: "2025-03-07", title: "Say goodbye to high energy consumption! See how the ViLEP-100 separatio...", excerpt: "On March 6, Yang Dongli, head of the leachate industry group of Sustonix, shared the 'Leachate & Special Wastewater Separation Low-Consumption'..." },
                 { date: "2025-02-01", title: "Jinji Lake City Walk + Cruise Party! Sustonix 2024-202...", excerpt: "On January 20, the 'Adhere to Duties, Bravely Innovate' Sustonix 2024-2025 Annual Meeting and Commendation Conference was held. CITY WALK,..." },
               ].map((n) => (
-                <a key={n.title} href="#" className="group relative grid grid-cols-[auto_1fr] gap-4 items-start rounded-xl bg-black/90 ring-1 ring-black/10 p-4 hover:bg-white transition-colors">
+                <Link key={n.title} href="#" className="group relative grid grid-cols-[auto_1fr] gap-4 items-start rounded-xl bg-black/90 ring-1 ring-black/10 p-4 hover:bg-white transition-colors">
                   <div className="flex h-12 w-12 flex-col items-center justify-center rounded bg-white text-black text-xs group-hover:text-white group-hover:bg-black leading-tight">
                     <div>{n.date.split("-")[1]}</div>
                     <div className="text-[10px]">{n.date.split("-")[0]}</div>
@@ -339,7 +339,7 @@ export default function Home() {
                     <div className="font-medium text-white group-hover:text-black">{n.title}</div>
                     <div className="mt-1 text-sm text-white group-hover:text-black line-clamp-2">{n.excerpt}</div>
                   </div>
-                </a>
+                </Link>
               ))}
             </div>
           </div>

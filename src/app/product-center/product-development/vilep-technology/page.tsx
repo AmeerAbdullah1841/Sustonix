@@ -39,7 +39,7 @@ export default function VilepTechnologyPage() {
           <div>
             <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">ViLEP technology</h1>
             <p className="text-gray-700 leading-relaxed">
-              ViLEP's vibrating PTFE membrane technology leverages hydrophilic PTFE materials and
+              ViLEP&apos;s vibrating PTFE membrane technology leverages hydrophilic PTFE materials and
               mechanical reciprocating motion to reduce energy consumption and fouling while
               improving lifespan. The first section mirrors the reference layout with an image and
               description.
