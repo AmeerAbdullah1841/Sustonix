@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white mt-12">
@@ -11,16 +13,16 @@ export default function Footer() {
             </p>
           </div>
           <div>
-         <h3 className="text-sm font-semibold mb-3"><a href="/product-center" className="hover:text-white">Product Center</a></h3>
-         <h3 className="text-sm font-semibold mb-3"><a href="/solution/leachate" className="hover:text-white">Solutions</a></h3>
-         <h3 className="text-sm font-semibold mb-3"><a href="/application-cases" className="hover:text-white">Application Cases</a></h3>
+         <h3 className="text-sm font-semibold mb-3"><Link href="/product-center" className="hover:text-white">Product Center</Link></h3>
+         <h3 className="text-sm font-semibold mb-3"><Link href="/solution/leachate" className="hover:text-white">Solutions</Link></h3>
+         <h3 className="text-sm font-semibold mb-3"><Link href="/application-cases" className="hover:text-white">Application Cases</Link></h3>
 
           </div>
           <div>
             <h4 className="text-sm font-semibold mb-3">Company</h4>
             <ul className="space-y-2 text-sm text-white/80">
-              <li><a href="/" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">About</a></li>
+              <li><Link href="/" className="hover:text-white">Home</Link></li>
+              <li><Link href="#" className="hover:text-white">About</Link></li>
             </ul>
           </div>
           <div>
