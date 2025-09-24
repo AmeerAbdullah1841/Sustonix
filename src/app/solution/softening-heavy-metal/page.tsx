@@ -17,12 +17,12 @@ export default function SofteningHeavyMetalPage() {
           <span className="mx-2">›</span>
           <span className="text-white">Softening & heavy metal removal</span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black rounded-2xl p-6 shadow-xl">
           <div className="relative w-full max-w-xl mx-auto" style={{ aspectRatio: "16 / 9" }}>
             <Image src="/soft.jpg" alt="Softening & heavy metal" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">Softening & Heavy Metal Removal</h1>
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">Softening & Heavy Metal Removal</h1>
           </div>
         </div>
         <section className="mt-10 bg-white rounded-2xl shadow overflow-hidden">

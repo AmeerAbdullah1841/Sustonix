@@ -17,12 +17,12 @@ export default function SeawaterDesalinationPage() {
           <span className="mx-2">›</span>
           <span className="text-white">Seawater desalination</span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-2 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black rounded-2xl p-2 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
             <Image src="/water.jpg" alt="Seawater desalination" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">Seawater Desalination</h1>
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">Seawater Desalination</h1>
             <p className="text-gray-700 leading-relaxed"></p>
           </div>
         </div>

@@ -19,20 +19,20 @@ export default function Vilep1000Page() {
           <span className="mx-2">›</span>
           <span className="text-white">ViLEP-1000</span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black rounded-2xl p-6 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
             <Image src="https://omo-oss-image.thefastimg.com/portal-saas/new2024041015584165399/cms/image/d7b7767c-100b-498c-a1c7-782e378d2730.png_560xaf.png" alt="ViLEP-1000" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">ViLEP-1000</h1>
-            <div className="inline-flex items-center rounded bg-black text-white text-xs font-medium px-4 py-1.5">Applicable Scenarios</div>
-            <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 space-y-2">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">ViLEP-1000</h1>
+            <div className="inline-flex items-center rounded bg-white text-black text-xs font-medium px-4 py-1.5">Applicable Scenarios</div>
+            <ul className="mt-2 list-disc pl-5 text-sm text-gray-200 space-y-2">
               <li>Landfill leachate treatment and difficult industrial wastewater</li>
               <li>Standardized module; easy maintenance</li>
               <li>Stable operation with low energy consumption</li>
             </ul>
-            <div className="mt-4 inline-flex items-center rounded bg-black text-white text-xs font-medium px-4 py-1.5">Design flux</div>
-            <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 space-y-2">
+            <div className="mt-4 inline-flex items-center rounded bg-white text-black text-xs font-medium px-4 py-1.5">Design flux</div>
+            <ul className="mt-2 list-disc pl-5 text-sm text-gray-200 space-y-2">
               <li>Operating flux 5–15 LMH</li>
               <li>Sludge concentration 15–30 g/L</li>
             </ul>

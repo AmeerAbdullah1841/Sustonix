@@ -19,13 +19,13 @@ export default function ReverseOsmosisPage() {
           <span className="mx-2">›</span>
           <span className="text-white">Toyobo reverse osmosis membrane</span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black backdrop-blur-sm rounded-2xl p-6 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
             <Image src="https://omo-oss-image.thefastimg.com/portal-saas/new2024041015584165399/cms/image/afef06a4-e83d-4346-af44-c6384e4cefad.png_1180xaf.png" alt="Reverse Osmosis" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">Toyobo reverse osmosis membrane</h1>
-            <p className="text-gray-700 leading-relaxed">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-white mb-4">Toyobo reverse osmosis membrane</h1>
+            <p className="text-gray-300 leading-relaxed">
             Common brackish water, reuse, desalination, water desalination</p>
           </div>
         </div>

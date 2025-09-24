@@ -26,7 +26,7 @@ export default function VilepTechnologyPage() {
         </div>
 
         {/* Hero */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black backdrop-blur-sm rounded-2xl p-6 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
             <Image
             src="https://omo-oss-image.thefastimg.com/portal-saas/new2024041015584165399/cms/image/b248fa3b-ab67-41df-99a7-04b15cf8beff.png_1180xaf.png"
@@ -37,15 +37,15 @@ export default function VilepTechnologyPage() {
             />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">ViLEP technology</h1>
-            <p className="text-gray-700 leading-relaxed">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">ViLEP technology</h1>
+            <p className="text-gray-300 leading-relaxed">
               ViLEP&apos;s vibrating PTFE membrane technology leverages hydrophilic PTFE materials and
               mechanical reciprocating motion to reduce energy consumption and fouling while
               improving lifespan. The first section mirrors the reference layout with an image and
               description.
             </p>
             <div className="mt-6">
-              <Link href="#contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm hover:bg-gray-700 transition-colors">Contact Us</Link>
+              <Link href="#contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black text-sm hover:bg-gray-700 transition-colors">Contact Us</Link>
             </div>
           </div>
         </div>

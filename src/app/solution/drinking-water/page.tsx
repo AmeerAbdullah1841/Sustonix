@@ -17,12 +17,12 @@ export default function DrinkingWaterPage() {
           <span className="mx-2">›</span>
           <span className="text-white">High‑quality drinking water</span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black rounded-2xl p-6 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
             <Image src="/drink.jpg" alt="Drinking water" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">High‑quality Drinking Water</h1>
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">High‑quality Drinking Water</h1>
           </div>
         </div>
         <section className="mt-10 bg-white rounded-2xl shadow overflow-hidden">

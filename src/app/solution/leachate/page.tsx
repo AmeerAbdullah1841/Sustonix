@@ -19,12 +19,12 @@ export default function LeachateSolutionPage() {
         </div>
 
         {/* Hero */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black rounded-2xl p-6 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "2 / 1" }}>
             <Image src="/industry.jpg" alt="Leachate solution" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">Leachate treatment technology package</h1>
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">Leachate treatment technology package</h1>
           </div>
         </div>
 

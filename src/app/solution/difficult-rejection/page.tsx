@@ -19,15 +19,14 @@ export default function DifficultRejectionPage() {
     Oilfield reinjection water treatment technology
         </span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black rounded-2xl p-6 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
             <Image src="/oil-water.jpg" alt="Difficult rejection" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">
     Oilfield reinjection water treatment technology
         </h1>
-            <p className="text-gray-700 leading-relaxed">Content placeholder.</p>
           </div>
         </div>
         <section className="mt-10 bg-white rounded-2xl shadow overflow-hidden">

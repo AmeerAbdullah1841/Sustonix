@@ -31,7 +31,7 @@ export default function SumitomoElectricPoreflonFilmPage() {
 
         {/* Hero Section (matches the attached reference layout) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-          <div className="bg-white rounded-lg overflow-hidden shadow">
+          <div className="bg-black rounded-lg overflow-hidden shadow">
             <div className="relative w-full" style={{aspectRatio: '4 / 3'}}>
               <Image
               src="https://omo-oss-image.thefastimg.com/portal-saas/new2024041015584165399/cms/image/2c6d4aed-ed65-4404-8cea-3ef06ac77a4c.png_1180xaf.png"

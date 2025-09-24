@@ -102,7 +102,7 @@ export default function ProductCenterPage() {
           {productCategories.map((category) => (
             <div
               key={category.id}
-              className="group relative flex flex-col items-center text-center transition-all duration-300 transform hover:-translate-y-2"
+              className="group relative flex flex-col items-center text-center transition-all duration-300 transform hover:-translate-y-2 md:pb-4"
               onMouseEnter={() => setHoveredCategory(category.id)}
               onMouseLeave={() => setHoveredCategory(null)}
               onTouchStart={() => setHoveredCategory(category.id)}
@@ -133,7 +133,7 @@ export default function ProductCenterPage() {
 
               {/* Sub-products list: static on mobile, floating on desktop */}
               {hoveredCategory === category.id && category.subProducts && (
-                <div className="w-full mt-3 md:absolute md:top-full md:mt-4 md:z-50">
+                <div className="w-full mt-3 md:absolute md:top-full md:mt-0 md:z-50">
                   <div className="flex flex-wrap gap-3 justify-center md:justify-center bg-black/30 md:bg-transparent rounded-xl p-2 md:p-0">
                     {category.subProducts.map((subProduct, index) => (
                       <div

@@ -21,28 +21,28 @@ export default function Vilep10Page() {
           <span className="text-white">ViLEP-100</span>
         </div>
         {/* Hero */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-2xl p-6 shadow-xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-black rounded-2xl p-6 shadow-xl">
           <div className="relative w-full" style={{ aspectRatio: "4 / 3" }}>
             <Image src="https://omo-oss-image.thefastimg.com/portal-saas/new2024041015584165399/cms/image/a3f990b3-3413-4e40-9c00-37f9fac72470.png_1180xaf.png" alt="ViLEP-10" fill unoptimized className="object-contain" />
           </div>
           <div>
-            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">ViLEP-100</h1>
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-200 mb-4">ViLEP-100</h1>
             {/* Applicable Scenarios */}
-            <div className="inline-flex items-center rounded bg-black text-white text-sm md:text-base font-medium px-4 py-1.5">Applicable Scenarios</div>
-            <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 space-y-2">
+            <div className="inline-flex items-center rounded bg-white text-black text-sm md:text-base font-medium px-4 py-1.5">Applicable Scenarios</div>
+            <ul className="mt-2 list-disc pl-5 text-sm text-gray-200 space-y-2">
               <li>Landfill leachate MBR; high‑concentration and difficult‑to‑treat wastewater</li>
               <li>Separation and recovery of emulsified oils, cutting fluids, titanium dioxide</li>
               <li>Stable production and compliance; oil resistance and pollution resistance</li>
               <li>Easy cleaning and maintenance; versatile application scenarios</li>
             </ul>
             {/* Design flux */}
-            <div className="mt-4 inline-flex items-center rounded bg-black text-white text-sm md:text-base font-medium px-4 py-1.5">Design flux</div>
-            <ul className="mt-2 list-disc pl-5 text-sm text-gray-700 space-y-2">
+            <div className="mt-4 inline-flex items-center rounded bg-white text-black text-sm md:text-base font-medium px-4 py-1.5">Design flux</div>
+            <ul className="mt-2 list-disc pl-5 text-sm text-gray-200 space-y-2">
               <li>Operating flux 5–15 LMH</li>
               <li>Sludge concentration 15–30 g/L</li>
             </ul>
             <div className="mt-4">
-              <Link href="#contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black text-white text-sm hover:bg-gray-700">Contact Us</Link>
+              <Link href="#contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white text-black text-sm hover:bg-gray-700">Contact Us</Link>
             </div>
           </div>
         </div>
