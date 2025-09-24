@@ -213,13 +213,13 @@ export default function Home() {
       </section>
 
       {/* Product highlight section */}
-      <section className="relative w-full h-screen overflow-hidden">
+      <section className="relative w-full min-h-screen overflow-hidden">
         {/* Background image layer */}
         <div className="absolute inset-0">
           <Image src="/grey-2.jpg" alt="Section background" fill className="object-cover" />
           <div className="absolute inset-0 bg-black/30" />
         </div>
-        <div className="relative z-10 mx-auto max-w-6xl h-full px-6 py-8 grid gap-8 md:grid-cols-2 items-center text-white">
+        <div className="relative z-10 mx-auto max-w-6xl h-full px-6 pt-8 md:py-8 grid gap-8 md:grid-cols-2 items-center text-white">
           <div>
             <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{products[activeProductIdx].name}</h3>
             <p className="mt-4 opacity-90">{products[activeProductIdx].blurb}</p>
@@ -236,23 +236,24 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            <div className="relative w-full max-h-[420px] h-[420px]">
+            <div className="relative w-full h-64 sm:h-80 md:h-[420px] md:max-h-[420px]">
               <Image src={products[activeProductIdx].image} alt={products[activeProductIdx].name} fill unoptimized className="rounded-xl shadow-lg object-cover" />
             </div>
           </div>
         </div>
 
-        <div className="absolute z-10 inset-x-0 bottom-20 px-6">
-          <div className="mx-auto max-w-6xl flex items-center gap-6 overflow-x-auto text-white">
+        <div className="z-10 inset-x-0 md:absolute md:bottom-20 px-6 mt-6 md:mt-0">
+          <div className="mx-auto max-w-6xl flex items-center gap-6 overflow-x-auto text-white rounded-xl bg-black/30 backdrop-blur p-3 md:bg-transparent md:p-0">
             {productOptionIdxs.map((idx) => {
               const p = products[idx];
               const isActive = idx === activeProductIdx;
               return (
                 <div key={p.key} className="flex flex-col items-center gap-2 shrink-0">
                   <button
+                    onClick={() => setActiveProductIdx(idx)}
                     onMouseEnter={() => setActiveProductIdx(idx)}
                     onFocus={() => setActiveProductIdx(idx)}
-                    className={`group relative h-24 w-24 sm:h-28 sm:w-28 rounded-full overflow-hidden border ${
+                    className={`group relative h-16 w-16 sm:h-20 sm:w-20 md:h-24 md:w-24 rounded-full overflow-hidden border ${
                       isActive ? "border-white" : "border-white/40"
                     }`}
                     aria-label={`View ${p.name}`}
